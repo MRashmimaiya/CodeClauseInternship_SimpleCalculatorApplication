@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#091000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:backgroundTint="#03A9F4"
+        android:fontFamily="serif-monospace"
+        android:hint="Enter number"
+        android:textColor="#172C9F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:backgroundTint="#78C9ED"
+        android:fontFamily="serif-monospace"
+        android:hint="Enter number"
+        android:textColor="#172C9F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="serif-monospace"
+        android:hint="Result"
+        android:textColor="#172C9F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear_one_digit"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F8F5"
+            android:onClick="clear_one_digit"
+            android:text="C"
+            android:textColor="#3F51B5"
+            android:textSize="28sp"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/clear_all"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F3F4F1"
+            android:onClick="clear_field_completely"
+            android:text="CE"
+            android:textColor="#364FDF"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/all_clear"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAFBF9"
+            android:onClick="all_cleared"
+            android:text="AC"
+            android:textColor="#3F51B5"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAFBF8"
+            android:onClick="divide"
+            android:text="/"
+            android:textColor="#3F51B5"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFA"
+            android:onClick="number"
+            android:text="7"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAFAF6"
+            android:onClick="number"
+            android:text="8"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F7F8F5"
+            android:onClick="number"
+            android:text="9"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2F3F0"
+            android:onClick="multiply"
+            android:text="*"
+            android:textColor="#3F51B5"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/four"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F3F0F0"
+            android:onClick="number"
+            android:text="4"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F8F8F7"
+            android:onClick="number"
+            android:text="5"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F7F8F6"
+            android:onClick="number"
+            android:text="6"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/subtract"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F8F5"
+            android:onClick="sub"
+            android:text="-"
+            android:textColor="#3F51B5"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F8FAF6"
+            android:onClick="number"
+            android:text="1"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F9FAF7"
+            android:onClick="number"
+            android:text="2"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F8F3"
+            android:onClick="number"
+            android:text="3"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/add"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F9FAF7"
+            android:onClick="add"
+            android:text="+"
+            android:textColor="#3F51B5"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F5F6F4"
+            android:onClick="number"
+            android:text="0"
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F9FAF7"
+            android:onClick="number"
+            android:text="."
+            android:textColor="#009688"
+            android:textSize="28sp" />
+
+
+        <Button
+            android:id="@+id/equal"
+            style="@style/Widget.AppCompat.ActionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2F4EF"
+            android:onClick="compute"
+            android:text="="
+            android:textColor="#3F51B5"
+            android:textSize="28sp" />
+    </LinearLayout>
+</LinearLayout>
